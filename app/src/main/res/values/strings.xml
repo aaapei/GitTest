@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HttpLibApplication</string>
+    <string name="aysncHttp">Android-Async-Http</string>
+    <string name="volleyHttp">Voley</string>
+    <string name="Okhttp">Okhttp</string>
+    <string name="retrofit">retrofit</string>
+
+</resources>
