@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onSuccess(int statusCode,
                                   Header[] headers, byte[] response) {
-                //请求成功，当http code==200
+                //请求成功
             }
 
             @Override
@@ -143,8 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          MediaType JSON
                 = MediaType.parse("application/json; charset=utf-8");
         Dispatcher dispatcher = new Dispatcher();
-        dispatcher.executorService()
-        OkHttpClient client = new OkHttpClient.Builder().dispatcher()
+       OkHttpClient client = new OkHttpClient.Builder().build();
         final okhttp3.Request request = new okhttp3.Request.Builder()
                 .url("http://httpbin.org/ip").get().build();
         okhttp3.Response response =
